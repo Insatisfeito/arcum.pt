@@ -1,0 +1,37 @@
+<header id="header" class="header navbar-fixed-top animated fadeInDown">
+    <div class="container">
+        <h1 class="logo">
+                <a href="index.html">
+                    <img class="img-responsive" src="images/logos/arcum_thumb.png">
+                </a>
+            </h1>
+        <!--<span class="logo-text">
+                <a href="index.html">
+                    Associação Recreativa e Cultural
+                    <br/>
+                    Universitária do Minho
+                </a>
+            </span>-->
+        <nav class="main-nav navbar-right" role="navigation">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar-collapse" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item <%= "active" if action_name == 'home' %>"><%= link_to "Início", root_path %></li>
+                    <li class="nav-item <%= "active" if action_name == 'cultural' %> "><%= link_to "Cultural", cultural_path %></a></li>
+                    <li class="nav-item <%= "active" if action_name == 'social' %>"><%= link_to "Social", social_path %></a></li>
+                    <li class="nav-item <%= "active" if action_name == 'educativo' %>"><%= link_to "Educativo", educativo_path %></a></li>
+                    <li class="nav-item"><%= link_to "Blog", "/blog" %></a></li>
+                    <li class="nav-item <%= "active" if action_name == 'sobre' %>"><%= link_to "Sobre nós", sobre_path %></a></li>
+                    <li class="nav-item <%= "active" if action_name == 'contactos' %>"><%= link_to "Contactos", contactos_path %></a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</header>
