@@ -1,5 +1,17 @@
 Rails.application.routes.draw do
 
+  get "/bomboemia" => 'grupos#bomboemia', as: :bomboemia
+
+  get "/tum" => 'grupos#tum', as: :tum
+
+  get "/gpum" => 'grupos#gpum', as: :gpum
+
+  get "/gmp" => 'grupos#gmp', as: :gmp
+
+  get "/tunaominho" => 'grupos#tunaominho', as: :tunaominho
+
+  get "/gfum" => 'grupos#gfum', as: :gfum
+
   root 'pages#home'
 
   get "/cultural" => "pages#cultural", as: :cultural
