@@ -31,7 +31,62 @@ $(document).ready(function() {
 });
 
 
+$(window).load(function() {
+    if (window.location.hash) {
+        $("."+window.location.hash.substring(1)+"-modal").click();
+    }
+});
 
+$(".bmb-modal").animatedModal({
+    modalTarget: 'modalbmb',
+    animatedIn: 'zoomIn',
+    animatedOut: 'zoomOut',
+    color: 'orange'
+});
+$(".gfum-modal").animatedModal({
+    modalTarget: 'modalgfum',
+    animatedIn: 'zoomIn',
+    animatedOut: 'zoomOut',
+    color: 'black'
+});
+$(".gmp-modal").animatedModal({
+    modalTarget: 'modalgmp',
+    animatedIn: 'zoomIn',
+    animatedOut: 'zoomOut',
+    color: 'white'
+});
+$(".gpum-modal").animatedModal({
+    modalTarget: 'modalgpum',
+    animatedIn: 'zoomIn',
+    animatedOut: 'zoomOut',
+    color: 'grey'
+});
+$(".tum-modal").animatedModal({
+    modalTarget: 'modaltum',
+    animatedIn: 'zoomIn',
+    animatedOut: 'zoomOut',
+    color: 'red'
+});
+$(".tunao-modal").animatedModal({
+    modalTarget: 'modaltunao',
+    animatedIn: 'zoomIn',
+    animatedOut: 'zoomOut',
+    color: 'purple'
+});
+
+$(".fitu-modal").animatedModal({
+    modalTarget: 'modalfitu',
+    animatedIn: 'zoomIn',
+    animatedOut: 'zoomOut',
+    color: 'purple'
+});
+
+$(".fuap-modal").animatedModal({
+    modalTarget: 'modalfuap',
+    animatedIn: 'zoomIn',
+    animatedOut: 'zoomOut',
+    color: 'purple'
+});
 
 
 
@@ -43,6 +98,76 @@ $(document).ready(function() {
         $('#' + $(this).attr('name')).show();
     })
 });
+
+$('a.btn').click(function(e) {
+    e.preventDefault()
+        $('#modaltum').modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: true
+        })
+})
+
+$('a.btn').click(function(e) {
+    e.preventDefault()
+        $('#modaltunao').modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: true
+        })
+})
+
+
+$('a.btn').click(function(e) {
+    e.preventDefault()
+        $('#modalbmb').modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: true
+        })
+})
+
+$('a.btn').click(function(e) {
+    e.preventDefault()
+        $('#modalgfum').modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: true
+        })
+})
+
+$('a.btn').click(function(e) {
+    e.preventDefault()
+        $('#modalgmp').modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: true
+        })
+})
+
+
+$('a.btn').click(function(e) {
+    e.preventDefault()
+        $('#modalgpum').modal({
+            show: true,
+            backdrop: 'static',
+            keyboard: true
+        })
+})
+
+
+
+
+$(document).keypress(function(e) {
+    if (e.keyCode == 27) {
+
+        $(".closebt").click();
+    }
+});
+
+
+
+
 
 
 
