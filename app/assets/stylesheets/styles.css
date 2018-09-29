@@ -277,7 +277,7 @@ select {
 
 .header h1.logo a {
     color: #fff;
-    padding: 10px 40px;
+    padding: 3px 17px;
     display: inline-block;
     text-align: center;
     line-height: 1.4;
@@ -407,13 +407,13 @@ select {
     position: relative;
 }
 
-.header .main-nav .nav.active > a {
+.header .main-nav .nav.active>a {
     background: #222f3d;
     color: #fff;
     color: rgba(255, 255, 255, 0.8);
 }
 
-.header .main-nav .nav.active > a:before {
+.header .main-nav .nav.active>a:before {
     content: "\f0d8";
     position: absolute;
     bottom: -8px;
@@ -425,7 +425,7 @@ select {
     width: 100%;
 }
 
-.header .main-nav .nav.active > a.dropdown-toggle:before {
+.header .main-nav .nav.active>a.dropdown-toggle:before {
     display: none;
 }
 
@@ -479,9 +479,9 @@ select {
 
 /* Override bootstrap default */
 
-.nav .open > a,
-.nav .open > a:hover,
-.nav .open > a:focus {
+.nav .open>a,
+.nav .open>a:hover,
+.nav .open>a:focus {
     background: none;
 }
 
@@ -1016,8 +1016,8 @@ select {
     background: rgba(142, 14, 3, 0.60);
 }
 
-.fuap{
-   background: rgba(92, 124, 34, 0.6);
+.fuap {
+    background: rgba(92, 124, 34, 0.6);
 }
 
 .black-over {
@@ -1768,8 +1768,8 @@ select {
     .access-section {
         padding-top: 15px;
     }
-    .headline-bg + .section,
-    .bg-slider-wrapper + .section {
+    .headline-bg+.section,
+    .bg-slider-wrapper+.section {
         padding-top: 45px;
     }
     .pricing .intro {
@@ -1812,7 +1812,6 @@ select {
         margin-bottom: 30px;
         text-align: center;
     }
-
     .carousel-wrapper #activities-carousel li {
         width: 70px !important;
         height: 70px;
@@ -1834,7 +1833,7 @@ select {
         position: static;
         z-index: inherit;
     }
-    .nav-tabs > li > a {
+    .nav-tabs>li>a {
         padding: 10px 5px;
     }
     .apps-section .phone-holder {
@@ -1956,7 +1955,7 @@ select {
     .content-section .team {
         padding: 0;
     }
-    .groups-list .group .content{
+    .groups-list .group .content {
         height: 140px;
     }
 }
@@ -1965,8 +1964,9 @@ select {
 /* Small devices (tablets, 768px and up) */
 
 @media (min-width: 768px) {
-
-    .header .logo-text{display: none;}
+    .header .logo-text {
+        display: none;
+    }
     .config-wrapper {
         display: none;
     }
@@ -2322,4 +2322,22 @@ select {
     .bg-slider-wrapper {
         position: fixed;
     }
+}
+
+.group-flex {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+.group {
+    max-width: 400px
+}
+
+.groups-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: center;
+    justify-content: center;
+    align-items: stretch;
 }
