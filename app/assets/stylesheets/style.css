@@ -6,10 +6,6 @@ body {
     -moz-osx-font-smoothing: grayscale;
 }
 
-*/ .grupo_caption a {
-    color: #fff !important;
-}
-
 .example-desc {
     margin: 3px 0;
     padding: 5px;
